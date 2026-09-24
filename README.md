@@ -25,6 +25,7 @@ Open: http://127.0.0.1:4177/
 - `site/assets/media/node-pack-golden.png` — generated Golden package with golden apples
 - `site/assets/media/hero-worm-apple.png` — pink worm holding the matching red apple
 - `site/assets/media/wormnodes-scenes/` — five native 3:2 organic WORMNODES scenes showing a Flap orchard launch, AAPLB staking barn, three natural lock paths, a banner-styled yield harvest market and ROYAL/FUJI/GOLDEN estates
+- `site/assets/media/wormnodes-scenes-extra/` — five additional native 3:2 scenes covering node registration, apple-node growth, the three-lock clock house, rustic node maintenance and a cable-free community beacon festival
 - `source-assets/official-marks/` — AAPLB, Flap and BNB references retrieved from Flap and supplied directly to the image model so the marks are rendered into wood, cloth, stone and physical tokens inside the generated scenes
 - `source-assets/WORMNODES-banner-1500x500.png` — the 1500 × 500 social banner master
 

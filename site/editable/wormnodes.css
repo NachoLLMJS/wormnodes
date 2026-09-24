@@ -16,8 +16,7 @@ header>div:first-child{background:linear-gradient(90deg,#f0b90b,#f59e0b,#f0b90b)
 .wn-yellow-sticker:before{background:#d89700!important}
 .wn-yellow-sticker>.sticker-btn-face{color:#fff!important;text-shadow:none}
 
-.wn-section-title{display:inline-flex;align-items:center;gap:.65rem;padding:.65rem 1.1rem;border:3px solid #101018;border-radius:12px;background:linear-gradient(135deg,#ffe27a,#f0b90b);box-shadow:5px 6px 0 #101018;color:#111;font-family:var(--font-heading,Impact,sans-serif);font-weight:1000;font-size:clamp(1.15rem,2vw,1.65rem);letter-spacing:.03em;text-transform:uppercase}
-.wn-section-title:before{content:'●';color:#d56c00;text-shadow:20px 0 0 #f7b500,-20px 0 0 #ffdf6a;margin:0 .5rem}
+
 .wn-yield-section{max-width:1240px;margin:3.5rem auto 5rem;padding:0 1rem;text-align:center}
 .wn-yield-section h2{font-family:var(--font-heading,Impact,sans-serif);font-size:clamp(2rem,5vw,4.2rem);line-height:.95;text-transform:uppercase;color:#fff;text-shadow:4px 4px 0 #000}
 .wn-yield-section h2 span{color:var(--wn-yellow)}

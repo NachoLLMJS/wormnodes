@@ -54,13 +54,18 @@ hero_items=hero_list.find_all('li') if hero_list else []
 for li,en,zh in zip(hero_items,['STAKE WITH AAPLB','RUN YOUR NODE','HARVEST YIELD'],['使用 AAPLB 质押','运行你的节点','收获收益']):
     li.string=zh; li['data-en']=en; li['data-zh']=zh
 
-# Section title.
+# Remove the old yellow section label while preserving the #nodes anchor.
 section_title=soup.select_one('.wn-section-title')
-open_img=soup.find('img',alt='Open packs')
-if not section_title and open_img:
-    section_title=soup.new_tag('div',id='nodes'); section_title['class']=['wn-section-title']; open_img.replace_with(section_title)
 if section_title:
-    section_title['data-en']='APPLE NODES'; section_title['data-zh']='苹果节点'; section_title.string='苹果节点'
+    section_title.decompose()
+open_img=soup.find('img',alt='Open packs')
+if open_img:
+    open_img.decompose()
+pack_grid=soup.select_one('#apple-pack-grid') or soup.select_one('#nodes')
+if pack_grid:
+    pack_grid['id']='apple-pack-grid'
+    pack_grid['class']=[c for c in pack_grid.get('class',[]) if c != 'mt-7']
+    pack_grid.find_parent('section')['id']='nodes'
 
 # Three generated node tiers.
 configs={

@@ -24,7 +24,8 @@ Open: http://127.0.0.1:4177/
 - `site/assets/media/node-pack-fuji.png` — generated Fuji apple-node package
 - `site/assets/media/node-pack-golden.png` — generated Golden package with golden apples
 - `site/assets/media/hero-worm-apple.png` — pink worm holding the matching red apple
-- `site/assets/media/wormnodes-scenes/` — five 1500 × 1000 WORMNODES illustrations covering node activation, staking, yield harvesting, lock periods and node tiers
+- `site/assets/media/wormnodes-scenes/` — five native 3:2 WORMNODES illustrations showing the Flap-to-BNB launch route, BNB node activation, AAPLB staking and time locks, locked-node yield and the ROYAL/FUJI/GOLDEN infrastructure tiers
+- `source-assets/official-marks/` — exact AAPLB, Flap and BNB marks retrieved from Flap and composited after generation to prevent logo distortion
 - `source-assets/WORMNODES-banner-1500x500.png` — the 1500 × 500 social banner master
 
 All production package and wordmark images are real image files; they are not HTML drawings.

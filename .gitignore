@@ -1,0 +1,25 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Local deployment metadata
+.vercel/
+
+# Python and editor caches
+__pycache__/
+*.py[cod]
+.vscode/
+.idea/
+
+# Local source mirror backups
+backups/
+origin-en.html
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -124,7 +124,7 @@ soup.body.append(BeautifulSoup(modal_html,'html.parser').div)
 for old_js in list(soup.find_all('script')):
     if 'wormnodes.js' in (old_js.get('src') or '') or 'wormnodes-lang.js' in (old_js.get('src') or ''): old_js.decompose()
 lang_js=soup.new_tag('script',src='/editable/wormnodes-lang.js?v=2',defer=True);soup.body.append(lang_js)
-js=soup.new_tag('script',src='/editable/wormnodes.js?v=9',defer=True);soup.body.append(js)
+js=soup.new_tag('script',src='/editable/wormnodes.js?v=11',defer=True);soup.body.append(js)
 
 # Remove all HTML comments and any residual attributes that point at the old site.
 for c in soup.find_all(string=lambda x:isinstance(x,Comment)): c.extract()

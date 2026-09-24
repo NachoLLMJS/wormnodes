@@ -12,4 +12,4 @@ Retrieved from the live Flap product on 2026-09-24
   - Source: https://flap.sh/bnb.svg
   - BNB symbol used by the Flap interface
 
-The scene backgrounds were generated without logos The official marks were composited afterward from these files so their geometry and orientation were not approximated by the image model
+The current organic scene backgrounds were generated with these official mark files supplied directly as image references The marks are rendered into physical wood, cloth, stone and tokens by the image model No logo layer was composited onto the current scene files after generation

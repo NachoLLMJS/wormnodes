@@ -106,10 +106,9 @@ for sibling in list(pack_section.find_next_siblings()): sibling.decompose()
 yield_html='''<section class="wn-yield-section" aria-labelledby="yield-title"><h2 id="yield-title" data-en="STAKE YOUR NODE<br><span>GROW YOUR YIELD</span>" data-zh="质押你的节点<br><span>增长你的收益</span>">质押你的节点<br/><span>增长你的收益</span></h2><p data-en="Stake AAPLB in a Royal, Fuji or Golden apple node, keep it locked for the selected period, and harvest rewards from the same dashboard" data-zh="在 ROYAL、FUJI 或 GOLDEN 苹果节点中质押 AAPLB，在指定周期内保持锁定，并通过同一控制面板收获收益">在 ROYAL、FUJI 或 GOLDEN 苹果节点中质押 AAPLB，在指定周期内保持锁定，并通过同一控制面板收获收益</p><div class="wn-benefits"><article class="wn-benefit"><strong data-en="Stake AAPLB" data-zh="质押 AAPLB">质押 AAPLB</strong><span data-en="Each package locks a defined amount of AAPLB for its node period" data-zh="每个节点包会在对应周期内锁定指定数量的 AAPLB">每个节点包会在对应周期内锁定指定数量的 AAPLB</span></article><article class="wn-benefit"><strong data-en="Run the node" data-zh="运行节点">运行节点</strong><span data-en="Your selected node remains staked and tracks its yield status continuously" data-zh="所选节点保持质押状态，并持续追踪收益进度">所选节点保持质押状态，并持续追踪收益进度</span></article><article class="wn-benefit"><strong data-en="Harvest yield" data-zh="收获收益">收获收益</strong><span data-en="Review accumulated rewards and harvest when node settlement is enabled" data-zh="查看累计奖励，并在节点结算启用后执行收获">查看累计奖励，并在节点结算启用后执行收获</span></article></div></section>'''
 pack_section.insert_after(BeautifulSoup(yield_html,'html.parser').section)
 
-# Replace footer action with same-tab documentation navigation.
+# Remove the original footer action; the public site has no documentation route.
 old_footer=soup.find('footer')
-footer_html='''<footer class="wn-footer"><a class="sticker-btn wn-yellow-sticker wn-twitter" href="/docs/" aria-label="Open WORMNODES docs"><span class="sticker-btn-face px-7 py-2.5 font-heading text-sm font-black uppercase tracking-wide text-white sm:text-base" data-en="DOCS" data-zh="文档">文档</span></a></footer>'''
-if old_footer: old_footer.replace_with(BeautifulSoup(footer_html,'html.parser').footer)
+if old_footer: old_footer.decompose()
 
 # Remove legacy floating music control.
 for button in list(soup.find_all('button')):

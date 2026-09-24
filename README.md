@@ -10,6 +10,12 @@ python server.py --host 127.0.0.1 --port 4177
 
 Open: http://127.0.0.1:4177/
 
+## Production
+
+- Website: https://wormnodes.vercel.app/
+- Repository: https://github.com/NachoLLMJS/wormnodes
+- Official X account: https://x.com/WormNodes
+
 ## Generated brand assets
 
 - `site/assets/media/wormnodes-logo.png` — yellow/orange generated WORMNODES logo
